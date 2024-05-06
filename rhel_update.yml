@@ -4,7 +4,7 @@
 
   tasks:
 
-    - name: Install system updates for RHEL operating systems
+    - name: Install system updates for RHEL OS systems
       yum:
         name: '*'
         state: latest
