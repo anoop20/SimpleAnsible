@@ -1,5 +1,5 @@
 ---
-- name: simple playbook file
+- name: simple playbook file to test Ansible
   hosts: all
   tasks:
   	- name: Print a sample message
