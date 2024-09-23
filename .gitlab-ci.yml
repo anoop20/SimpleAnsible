@@ -1,7 +1,19 @@
-create_file:
-  image: alpine
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
   script:
-    - echo "Building file .."
-    - mkdir build
-    - touch build/file.txt
-  
+    - echo "Job Building has been started"
+
+test-job:
+  stage: test
+  script:
+    - echo “If the built job completed properly, test the build"
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo “If Testing job completed successfully, then deployment will start”
