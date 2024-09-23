@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-
+# test
     - name: Install system updates for RHEL OS systems
       yum:
         name: '*'
