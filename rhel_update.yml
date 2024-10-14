@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-# test
+# test (jenkins change)
     - name: Install system updates for RHEL OS systems
       yum:
         name: '*'
